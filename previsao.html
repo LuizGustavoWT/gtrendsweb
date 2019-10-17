@@ -11,8 +11,95 @@
 </head>
 
 <body>
-    <a href="heatmap.html">Mapa De Calor</a>
-    <a href="previsao.html">Previsão De Produção</a>
+
+        <div id="previsao">
+                <div id="formulario">
+                    <form onsubmit="" class="form-inline">
+                        <div id="mes" class="form-group mx-sm-3 mb-2">
+                            <select id="selectMes" class="form-control">
+                                <option value="janeiro">Janeiro</option>
+                                <option value="fevereiro">Fevereiro</option>
+                                <option value="marco">Março</option>
+                                <option value="abril">Abril</option>
+                                <option value="maio">Maio</option>
+                                <option value="junho">Junho</option>
+                                <option value="julho">Julho</option>
+                                <option value="agosto">Agosto</option>
+                                <option value="setembro">Setembro</option>
+                                <option value="outubro">Outubro</option>
+                                <option value="novembro">Novembro</option>
+                                <option value="desembro">Desembro</option>
+                            </select>
+                        </div>
+                        <div id="uf" class="form-group mx-sm-3 mb-2">
+                            <select id="selectUf" class="form-control">
+                                <option value="BR-SE">Sergipe</option>
+                                <option value="BR-PI">Piauí</option>
+                                <option value="BR-CE">Ceará</option>
+                                <option value="BR-PB">Paraíba</option>
+                                <option value="BR-MA">Maranhão</option>
+                                <option value="BR-AL">Alagoas</option>
+                                <option value="BR-PE">Pernambuco</option>
+                                <option value="BR-RN">Rio Grande do Norte</option>
+                                <option value="BR-AM">Amazonas</option>
+                                <option value="BR-BA">Bahia</option>
+                                <option value="BR-PA">Pará</option>
+                                <option value="BR-GO">Goiás</option>
+                                <option value="BR-ES">Espírito Santo</option>
+                                <option value="BR-MS">Mato Grosso do Sul</option>
+                                <option value="BR-SC">Santa Catarina</option>
+                                <option value="BR-SP">São Paulo</option>
+                                <option value="BR-DF">Distrito Federal</option>
+                                <option value="BR-PR">Paraná</option>
+                                <option value="BR-MG">Minas Gerais</option>
+                                <option value="BR-RJ">Rio de Janeiro</option>
+                                <option value="BR-RS">Rio Grande do Sul</option>
+                                <option value="BR-MT">Mato Grosso</option>
+                                <option value="BR-AC">Acre</option>
+                                <option value="BR-AP">Amapá</option>
+                                <option value="BR-RO">Rondônia</option>
+                                <option value="BR-RR">Roraima</option>
+                                <option value="BR-TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <div id="regiao" class="form-group mx-sm-3 mb-2">    
+                            <select id="selectRegiao">
+                                <option value="sul">Sul</option>
+                                <option value="sudeste">Sudeste</option>
+                                <option value="centroOeste">Centro-Oeste</option>
+                                <option value="norte">Norte</option>
+                                <option value="nordeste">Nordeste</option>
+                            </select>
+                        </div>
+
+                        <div id="un" class="form-group mx-sm-3 mb-2">
+                            <p>Unidade</p>
+                            <input type="text" id="unidades">
+                        </div>
+
+                        <div id="medicamentos" class="form-group mx-sm-3 mb-2">
+                                <select id="selectMedicamento" class="form-control">
+                                    <option value="sensilate">Sensilate</option>
+                                    <option value="vigoraHomem">Vigora Homem</option>
+                                    <option value="dexprotenol">Dexprotenol</option>
+                                    <option value="hematofler">Hematofler</option>
+                                    <option value="pratiderm">Pratiderm</option>
+                                    <option value="vigoraMulher">Vigora Mulher</option>
+                                    <option value="vigoraOmega">Vigora Omega 3</option>
+                                </select>
+                            </div>
+                         
+                        <button type="submit" class="btn btn-dark mb-2">Gerar Mapa De Calor</button>
+                        <button class="btn btn-outline-info mb-2 ml-2" id="voltar">Voltar</button>
+                    </form>
+                </div>
+                
+                <div id="mapas">
+                    <div id="mapa" style="float: left;"></div>
+                </div>
+            </div>
+        
+
 </body>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-1.5.0.min.js"></script>
